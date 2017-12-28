@@ -35,7 +35,7 @@ public class ShareMultiImageToWeChatUtil {
         // 首先保存图片
 
         String fileName = System.currentTimeMillis() + ".jpg";
-       File mFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "TyMeiJie", fileName);
+       File mFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "shareImages", fileName);
         if (!mFile.getParentFile().exists()) {
             mFile.getParentFile().mkdirs();
         }
